@@ -18,7 +18,6 @@ let commentRoutes       = require("./routes/comments"),
 
 
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true, useUnifiedTopology: true});
-//mongoose.connect("mongodb+srv://nsivapatham:nikhiliscool20@cluster0.eqjrr.mongodb.net/<dbname>?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
