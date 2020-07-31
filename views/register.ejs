@@ -1,0 +1,46 @@
+<%- include('./partials/header') %> 
+
+<div class="row justify-content-center">
+    <div class="col-md-12 text-center">
+        <h1>Sign Up</h1>
+    </div>
+    
+    <div class="col-md-4">
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" type="text" name="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" name="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input class="form-control" type="text" name="firstName" placeholder="First name here">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input class="form-control" type="text" name="lastName" placeholder="Last name here">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" name="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                <label for="Avatar">Avatar URL</label>
+                <input class="form-control" type="text" name="avatar" placeholder="avatar url">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label> 
+                <textarea class="form-control" type="bio" name="bio" rows="5" placeholder="Write a short description of yourself and what you enjoy about camping."></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+            </div>
+        </form>
+        <a href="/campgrounds">Go Back</a>
+    </div>
+</div>
+
+<%- include('./partials/footer') %> 
